@@ -13,7 +13,8 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:paddingTop="10dp"
+        android:layout_weight="20"
+        android:contentDescription="@string/app_name"
         app:srcCompat="@drawable/logo"
         tools:ignore="ImageContrastCheck" />
 
@@ -21,103 +22,109 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingVertical="10sp"
-        android:text="Cadastre-se"
+        android:layout_marginTop="15sp"
+        android:layout_weight="20"
+        android:text="@string/cadastre_se"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/cor_text_verde_escuro"
+
+
         android:textSize="24sp"
-        android:textStyle="bold"
-
-
-        />
+        android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="15dp"
+        android:layout_weight="10"
         android:textColorHint="#593EBD80">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
             android:accessibilityHeading="false"
-            android:hint="Nome"
+            android:background="@drawable/botao_borda_verde_radius"
+            android:hint="@string/nome"
             android:textAlignment="viewStart"
-            android:textColor="@color/cor_text_verde_escuro"
-            android:background="@drawable/botao_login"
-            />
+            android:textColor="@color/cor_text_verde_escuro" />
 
 
-        <com.google.android.material.textfield.TextInputLayout
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:textColorHint="#593EBD80">
+
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingTop="15dp"
-            android:textColorHint="#593EBD80">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/botao_borda_verde_radius"
+            android:hint="@string/email"
+            android:textColor="@color/cor_text_verde_escuro" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/botao_login"
-                android:hint="E-mail"
-                android:textAlignment="viewStart"
-                android:textColor="@color/cor_text_verde_escuro" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingTop="15dp"
-                android:textColorHint="#593EBD80">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:textColorHint="#593EBD80">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/botao_login"
-                    android:hint="Confirme seu e-mail"
-                    android:textAlignment="viewStart"
-                    android:textColor="@color/cor_text_verde_escuro" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/botao_borda_verde_radius"
+            android:hint="@string/email_confimar"
+            android:textColor="@color/cor_text_verde_escuro" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingTop="15dp"
-                    android:textColorHint="#593EBD80">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:textColorHint="#593EBD80">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/botao_login"
-                        android:hint="Senha"
-                        android:textAlignment="viewStart"
-                        android:textColor="@color/cor_text_verde_escuro" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/botao_borda_verde_radius"
+            android:hint="@string/senha"
+            android:textColor="@color/cor_text_verde_escuro"
+            android:inputType="textPassword"/>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="15dp"
-                        android:paddingBottom="30dp"
-                        android:textColorHint="#593EBD80">
+    </com.google.android.material.textfield.TextInputLayout>
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/botao_login"
-                            android:hint="Confirme Senha"
-                            android:textAlignment="viewStart"
-                            android:textColor="@color/cor_text_verde_escuro" />
-                    </com.google.android.material.textfield.TextInputLayout>
-                </com.google.android.material.textfield.TextInputLayout>
-            </com.google.android.material.textfield.TextInputLayout>
-        </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:textColorHint="#593EBD80">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/botao_borda_verde_radius"
+            android:hint="@string/senha_confirmar"
+            android:textColor="@color/cor_text_verde_escuro"
+            android:inputType="textPassword"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:layout_weight="10"
         android:background="@drawable/gradiente_verde"
         android:onClick="abrirToast"
-        android:text="Confirmar"
+        android:text="@string/confirmar"
         android:textColor="@color/white" />
 
 </LinearLayout>

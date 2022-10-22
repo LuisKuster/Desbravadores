@@ -46,7 +46,7 @@
         android:autoSizeMinTextSize="12sp"
         android:autoSizeTextType="uniform"
         android:background="#B3FFFFFF"
-        android:completionHintView="@drawable/botao_login"
+        android:completionHintView="@drawable/botao_borda_verde_radius"
         android:completionThreshold="1"
         android:ems="10"
         android:hint="Pesquisar"

@@ -12,4 +12,22 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_tela_inicial">tela_inicial</string>
+
+    <!-- Botão -->
+    <string name="confirmar">Confirmar</string>"
+    <string name="entrar">Entrar</string>"
+    <string name="criar_conta">Criar Conta</string>"
+    <string name="curitr">Curtir</string>"
+
+    <!-- Login -->
+
+    <string name="login">Login</string>"
+
+    <!-- Cadastro -->
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="nome">Nome</string>
+    <string name="email">E-mail</string>
+    <string name="email_confimar">Confirme seu e-mail</string>
+    <string name="senha">Senha</string>
+    <string name="senha_confirmar">Confirme sua senha</string>
 </resources>
