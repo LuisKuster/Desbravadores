@@ -17,7 +17,7 @@
         android:paddingHorizontal="10dp">
 
         <ImageView
-            android:id="@+id/foto"
+            android:id="@+id/imgLocal"
             android:layout_width="72dp"
             android:layout_height="72dp"
             android:scaleType="centerCrop"
@@ -35,8 +35,8 @@
             android:text="TextView"
             android:textColor="@color/cor_text_verde_escuro"
             android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/butCurtirLocal"
-            app:layout_constraintStart_toEndOf="@+id/foto"
+            app:layout_constraintEnd_toStartOf="@+id/btnCurtirLocal"
+            app:layout_constraintStart_toEndOf="@+id/imgLocal"
             app:layout_constraintTop_toTopOf="parent" />
 
         <CheckBox
@@ -47,7 +47,7 @@
             android:button="@drawable/check_box_estrela"
             android:theme="@style/cor_check_box_verde"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/foto"
+            app:layout_constraintStart_toEndOf="@+id/imgLocal"
             app:layout_constraintTop_toBottomOf="@+id/txtNomeLocal"
             app:layout_constraintVertical_bias="0.3"
             tools:ignore="TouchTargetSizeCheck" />
@@ -105,7 +105,7 @@
             tools:ignore="TouchTargetSizeCheck" />
 
         <CheckBox
-            android:id="@+id/butCurtirLocal"
+            android:id="@+id/btnCurtirLocal"
             android:layout_width="56dp"
             android:layout_height="68dp"
             android:button="@drawable/check_box_curtir"

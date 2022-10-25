@@ -17,15 +17,8 @@ public class Estrelas {
         return pontoTuristico;
     }
 
-    public void setPontoTuristico(PontoTuristico pontoTuristico) {
-        this.pontoTuristico = pontoTuristico;
-    }
-
     public int getEstrelas() {
         return estrelas;
     }
 
-    public void setEstrelas(int estrelas) {
-        this.estrelas = estrelas;
-    }
 }

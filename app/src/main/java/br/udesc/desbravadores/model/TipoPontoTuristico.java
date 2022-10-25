@@ -14,15 +14,9 @@ public class TipoPontoTuristico {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getTipoPontoTuristico() {
         return TipoPontoTuristico;
     }
 
-    public void setTipoPontoTuristico(String tipoPontoTuristico) {
-        TipoPontoTuristico = tipoPontoTuristico;
-    }
+
 }
