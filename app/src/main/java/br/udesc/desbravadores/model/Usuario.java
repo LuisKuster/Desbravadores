@@ -10,9 +10,8 @@ public class Usuario {
     private String senha;
     private List<Curtidas> curtidas;
     private List<Estrelas> estrelas;
-    private boolean logado;
 
-    public Usuario(int id, String nome, String email, String senha) {
+    public Usuario(int id, String nome, String email, String senha, List<Curtidas> curtidas, List<Estrelas> estrelas) {
         this.id = id;
         this.nome = nome;
         this.email = email;
@@ -67,13 +66,5 @@ public class Usuario {
 
     public void setEstrelas(List<Estrelas> estrelas) {
         this.estrelas = estrelas;
-    }
-
-    public boolean isLogado() {
-        return logado;
-    }
-
-    public void setLogado(boolean logado) {
-        this.logado = logado;
     }
 }

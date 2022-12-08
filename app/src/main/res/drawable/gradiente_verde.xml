@@ -6,7 +6,6 @@
         android:startColor="@color/cot_texte_verde_claro"
         android:endColor="@color/cor_text_verde_escuro"
         android:type="linear"
-        android:angle="270"
         >
     </gradient>
     <corners android:radius="8dp">

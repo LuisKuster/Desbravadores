@@ -8,7 +8,7 @@ public class PontoTuristicoHistoria extends PontoTuristico{
 
     private List<String> paragrafos = new ArrayList<String>();
 
-    public PontoTuristicoHistoria(int id, int idTipoPontoTuristico, String tipo, String nome, Endereco endereco, String descricao, boolean curtir, double estrelas, Locale localizacao, List<String> paragrafos) {
+    public PontoTuristicoHistoria(int id, int idTipoPontoTuristico, String tipo, String nome, Endereco endereco, String descricao, int curtir, double estrelas, Locale localizacao, List<String> paragrafos) {
         super(id, idTipoPontoTuristico, tipo, nome, endereco, descricao, curtir, estrelas, localizacao);
         this.paragrafos = paragrafos;
     }
@@ -17,4 +17,7 @@ public class PontoTuristicoHistoria extends PontoTuristico{
         return paragrafos;
     }
 
+    public void setParagrafos(List<String> paragrafos) {
+        this.paragrafos = paragrafos;
+    }
 }

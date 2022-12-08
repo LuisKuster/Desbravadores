@@ -17,7 +17,15 @@ public class Curtidas {
         return pontoTuristico;
     }
 
+    public void setPontoTuristico(PontoTuristico pontoTuristico) {
+        this.pontoTuristico = pontoTuristico;
+    }
+
     public Boolean getCurtido() {
         return curtido;
+    }
+
+    public void setCurtido(Boolean curtido) {
+        this.curtido = curtido;
     }
 }

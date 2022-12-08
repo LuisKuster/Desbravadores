@@ -2,7 +2,7 @@ package br.udesc.desbravadores.model;
 
 import java.util.Locale;
 
-public class PontoTuristico {
+public abstract class PontoTuristico {
 
     private int id;
     private int idTipoPontoTuristico;
@@ -10,7 +10,7 @@ public class PontoTuristico {
     private String nome;
     private Endereco endereco;
     private String descricao;
-    private boolean curtir;
+    private int curtir;
     private double estrelas;
     private Locale localizacao;
     private String facebook;
@@ -19,7 +19,7 @@ public class PontoTuristico {
     //private double valorEntrada;
 
 
-    public PontoTuristico(int id, int idTipoPontoTuristico, String tipo, String nome, Endereco endereco, String descricao, boolean curtir, double estrelas, Locale localizacao) {
+    public PontoTuristico(int id, int idTipoPontoTuristico, String tipo, String nome, Endereco endereco, String descricao, int curtir, double estrelas, Locale localizacao) {
         this.id = id;
         this.idTipoPontoTuristico = idTipoPontoTuristico;
         this.tipo = tipo;
@@ -31,17 +31,12 @@ public class PontoTuristico {
         this.localizacao = localizacao;
     }
 
-    public PontoTuristico(int id, int idTipoPontoTuristico, String nome,boolean curtir){
-        this.id = id;
-        this.idTipoPontoTuristico = idTipoPontoTuristico;
-        this.nome = nome;
-        this.curtir = curtir;
-    }
-
-
-
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getIdTipoPontoTuristico() {
@@ -56,67 +51,55 @@ public class PontoTuristico {
         return tipo;
     }
 
-    public String getNome() {
-        return nome;
-    }
-
-    public Endereco getEndereco() {
-        return endereco;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public Boolean getCurtir() {
-        return curtir;
-    }
-
-    public double getEstrelas() {
-        return estrelas;
-    }
-
-    public Locale getLocalizacao() {
-        return localizacao;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public void setTipo(String tipo) {
         this.tipo = tipo;
+    }
+
+    public String getNome() {
+        return nome;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
     }
 
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
+    }
+
+    public String getDescricao() {
+        return descricao;
     }
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
 
-    public void setCurtir(boolean curtir) {
+    public int getCurtir() {
+        return curtir;
+    }
+
+    public void setCurtir(int curtir) {
         this.curtir = curtir;
+    }
+
+    public double getEstrelas() {
+        return estrelas;
     }
 
     public void setEstrelas(double estrelas) {
         this.estrelas = estrelas;
     }
 
+    public Locale getLocalizacao() {
+        return localizacao;
+    }
+
     public void setLocalizacao(Locale localizacao) {
         this.localizacao = localizacao;
-    }
-
-    public void setFacebook(String facebook) {
-        this.facebook = facebook;
-    }
-
-    public void setInstagram(String instagram) {
-        this.instagram = instagram;
     }
 }
